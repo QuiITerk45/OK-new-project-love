@@ -62,7 +62,7 @@ function no(){
     var a = Math.floor(Math.random()*200)
     var b = Math.floor(Math.random()*200)
     var getno1 =document.getElementById('no1');
-    window.navigator.vibrate(1000)
+    window.navigator.vibrate(100)
     getno1.style.position='absolute'
     getno1.style.left = '-'+a+'px';
     getno1.style.top = '-'+b+'px';
