@@ -53,6 +53,10 @@ function music1(){
     const audio= new Audio('./assets/music/Tieng-yeah-tre-con-www_nhacchuongvui_com.mp3')
     audio.play();
 }
+function music2(){
+ const audio=new Audio('./assets/music/LoveIsLikeAFlower-Danbi_3w7nv.mp3');
+audio.play();
+}
 function no(){
     music();
     var a = Math.floor(Math.random()*200)
@@ -71,7 +75,7 @@ function yes(){
         alert('Tớ biết mà 😄, Love You');
     },500)
   
-
+    music2();
 
     var getimg= document.getElementById('anh1')
 
