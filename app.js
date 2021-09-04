@@ -42,3 +42,15 @@ function yes(){
     },100)
 
 }
+
+
+
+
+var audio =document.getElementById('audio1');
+
+var count=0;
+const a = new Audio('/assets/music/LoveIsLikeAFlower-Danbi_3w7nv.mp3');
+ function music(){  
+    a.play();
+ }
+
