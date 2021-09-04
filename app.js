@@ -93,20 +93,21 @@ function yes(){
 
 
     
-    setTimeout(function(){
-        getget.innerHTML = '<h2>Love You</h2>'
+    function a(){
         var i = 0;
         var x= 1;
-        var t = setInterval(run,10)
+        getget.style.display='block'
         function run(){
-          if(i>150||i<-150)
+          if(i>300||i<0)
               x=-x;
           i+=x;
+         
           getget.style.left = i+'px'
+         
         }
-        getget.style.display='block'
-        getget.style.textAlign = 'center'
-    },50)
+        setInterval(run,10)
+    }
+    a();
 
     setInterval(function(){
       getget.style.color='red'
