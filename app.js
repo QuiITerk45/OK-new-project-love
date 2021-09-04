@@ -53,12 +53,16 @@ function music1(){
     const audio= new Audio('./assets/music/Tieng-yeah-tre-con-www_nhacchuongvui_com.mp3')
     audio.play();
 }
+function music2(){
+ const audio=new Audio('./assets/music/LoveIsLikeAFlower-Danbi_3w7nv.mp3');
+audio.play();
+}
 function no(){
     music();
     var a = Math.floor(Math.random()*200)
     var b = Math.floor(Math.random()*200)
     var getno1 =document.getElementById('no1');
-    window.navigator.vibrate(1000)
+    window.navigator.vibrate(100)
     getno1.style.position='absolute'
     getno1.style.left = '-'+a+'px';
     getno1.style.top = '-'+b+'px';
@@ -71,7 +75,7 @@ function yes(){
         alert('Tớ biết mà 😄, Love You');
     },500)
   
-
+    music2();
 
     var getimg= document.getElementById('anh1')
 
@@ -91,6 +95,15 @@ function yes(){
     
     setTimeout(function(){
         getget.innerHTML = '<h2>Love You</h2>'
+        var i = 0;
+        var x= 1;
+        var t = setInterval(run,10)
+        function run(){
+          if(i>150||i<-150)
+              x=-x;
+          i+=x;
+          getget.style.left = i+'px'
+        }
         getget.style.display='block'
         getget.style.textAlign = 'center'
     },50)
@@ -104,6 +117,3 @@ function yes(){
     },100)
 
 }
-
-
-

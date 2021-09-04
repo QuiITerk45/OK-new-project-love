@@ -41,6 +41,18 @@ html{
     color: white;
 }
 
+#date{
+    position: absolute;
+    z-index: 10000;
+    color: white;
+    font-size: 50px;
+    bottom: 20px;
+    left: 50%;
+    opacity: 0.7;
+    top:75%;
+    transform: translateX(-50%);
+}
+
 
 
 

@@ -22,7 +22,7 @@
      
     
 
-        <audio src="./assets/music/LoveIsLikeAFlower-Danbi_3w7nv.mp3" id="ok"></audio>
+        
         
 <div id="text" style="position: relative;display: none;"></div>
     <div id="container">
@@ -48,11 +48,28 @@
         
       </div>
     </div>
+    <div id="date"></div>
     <script>
-      var ok =document.getElementById('ok')
-      setTimeout(function(){
-    ok.play();
-  },1000)
+      function ok(){
+        var a =new Date();
+      var gethour = a.getHours();
+      var getmin  =a.getMinutes();
+      var getsecond = a.getSeconds();
+      var getdate = document.getElementById('date');
+      if(gethour < 10){
+         gethour='0'+gethour;
+       }
+         if(getmin < 10){
+          getmin = '0'+getmin
+       }
+         if(getsecond < 10){
+         getsecond='0'+getsecond;
+       }
+      getdate.innerHTML = gethour + ":" + getmin + ":" +getsecond;
+      setInterval(ok,1000)
+       
+      }
+     ok()
     </script>
   </body>
 </html>
