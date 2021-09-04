@@ -20,10 +20,13 @@
   </head>
   <body>
      
-  
-        <button onclick="music()" id="ok">Music</button>
+    
+
+        <audio src="./assets/music/LoveIsLikeAFlower-Danbi_3w7nv.mp3" id="ok"></audio>
+        
 <div id="text" style="position: relative;display: none;"></div>
     <div id="container">
+      <img src="https://images.unsplash.com/photo-1511018587878-f734c3819cfc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FydG9vbiUyMGxvdmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" id="anh1">
       <img
         src="https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         alt=""
@@ -33,7 +36,7 @@
     <div class="modal">
         <div class="first">
           <h2>Chào cậu !</h2>
-          <p style="font-style:italic;margin-top:3px;">Cậu có thích tớ không ?</p>
+          <p style="font-style:italic;margin-top:3px;" id="pk">Cậu có thích tớ không ?</p>
         </div>
 
         <div class="button-yn"></div>
@@ -45,5 +48,11 @@
         
       </div>
     </div>
+    <script>
+      var ok =document.getElementById('ok')
+      setTimeout(function(){
+    ok.play();
+  },1000)
+    </script>
   </body>
 </html>
